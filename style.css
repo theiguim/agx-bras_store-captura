@@ -14,30 +14,22 @@
     align-items: center;
     width: 100vw;
     position: relative;
+    background-image:
+        linear-gradient(to right, rgb(0, 0, 0) 3%, rgba(0, 0, 0, 0) 90%),
+        linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%),
+        url('imgMain.jpg');
 
-
-    background-image: url(mainImg.png);
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-
+    background-size: 40% auto;
+    background-position: 100%;
 }
 
 body {
     background-color: black;
     overflow-x: hidden;
-
-    /* background-color: orange; */
-    overflow-x: hidden;
-    /*
-   display: flex;
-   align-items: center;
-   align-content: center;
-   justify-content: center; */
-
     width: 100vw;
     max-height: 150vh;
-    /* overflow: hidden; */
+
 }
 
 h1,
@@ -55,8 +47,6 @@ span {
 }
 
 h1 {
-    /* font-size: 55px; */
-    /* width: 400px; */
     line-height: 1em;
     font-size: 28px;
 }
@@ -81,7 +71,6 @@ p {
 }
 
 .container {
-    /* min-width: 500px; */
     width: 500px;
     height: 50vh;
     margin-left: 50px;
@@ -93,8 +82,6 @@ p {
     justify-content: center;
 
     z-index: 100;
-
-    /* background-color: orange; */
 }
 
 .txt {
@@ -133,13 +120,9 @@ button:hover {
 
 .lines {
     position: absolute;
-    /* background-color: orange; */
     top: 0;
     width: 100%;
     height: 100%;
-    /* overflow: hidden; */
-
-
     display: flex;
     align-items: center;
 }
@@ -151,7 +134,6 @@ button:hover {
     height: 70px;
     display: flex;
     align-items: center;
-
     overflow-x: hidden;
 }
 
@@ -208,12 +190,16 @@ footer {
     }
 }
 
+@media(max-width: 1350px) {
+    .main {
+        background-size: 80% auto;
+        background-position: 100% 0%;
+    }
+}
 
 @media (max-width: 907px) {
 
-    p{
-        
-    }
+    p {}
 
     h1 {
         font-size: 26px;
@@ -252,12 +238,15 @@ footer {
     .main {
         justify-content: center;
         height: 85vh;
-        /* background: black; */
-        background-image: 
-        linear-gradient(to top, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.87) 50%, rgba(0, 0, 0, 0) 80%), /* Degradê principal */
-        url('mainImg.png'); /* Imagem de fundo */
+
+        background-image:
+            linear-gradient(to top, rgb(0, 0, 0) 20%, rgba(0, 0, 0, 0.87) 50%, rgba(0, 0, 0, 0) 80%),
+            /* Degradê principal */
+            url('imgMain.jpg');
         flex-direction: column;
         background-position: top;
+
+        background-size: cover;
     }
 
     .txt {
@@ -305,12 +294,12 @@ footer {
 
 }
 
-@media(max-width: 560px){
+@media(max-width: 560px) {
     .txt {
         width: 70%;
         height: 100%;
     }
-} 
+}
 
 
 @media(max-width: 470px) {
