@@ -149,6 +149,29 @@ button:hover {
     background: linear-gradient(45deg, #ff6ec4, #7873f5);
 }
 
+.lineText {
+    display: inline-block;
+    white-space: nowrap;
+    animation: slide 5s linear infinite;
+    font-size: 1.5rem;
+    color: white !important;
+    text-transform: uppercase;
+    word-spacing: 50px;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 footer {
     width: 100vw;
     height: 70px;
@@ -162,28 +185,6 @@ footer {
     align-items: center;
     position: absolute;
     bottom: -230px;
-}
-
-.lineText {
-    display: inline-block;
-    white-space: nowrap;
-    animation: slide 40s linear infinite;
-    font-size: 1.5rem;
-    color: white !important;
-    text-transform: uppercase;
-    word-spacing: 50px;
-    margin: 0;
-    overflow: hidden;
-}
-
-@keyframes slide {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
 }
 
 @media(max-width: 1350px) {
