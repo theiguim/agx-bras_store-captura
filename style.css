@@ -192,6 +192,10 @@ footer {
         background-size: 80% auto;
         background-position: 100% 0%;
     }
+
+    .spnH1 {
+        font-size: 63px;
+    }
 }
 
 @media (max-width: 907px) {
@@ -205,7 +209,7 @@ footer {
     }
 
     .spnH1 {
-        font-size: 65px;
+        font-size: 58px;
     }
 
     h2 {
@@ -220,7 +224,7 @@ footer {
     }
 
     .spnH1 {
-        font-size: 57px;
+        font-size: 50px;
     }
 
     h2 {
@@ -328,7 +332,7 @@ footer {
     }
 
     .spnH1 {
-        font-size: 53px;
+        font-size: 50px;
     }
 
     h2 {
